@@ -10,6 +10,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@mdi/font": "^3.8.95",
     "bootstrap": "4.3.1",
     "bootstrap-vue": "2.0.0-rc.15",
     "chart.js": "2.8.0",
@@ -21,8 +22,10 @@
     "vue-chartjs": "3.4.2",
     "vue-clipboard2": "0.3.0",
     "vue-flatpickr-component": "8.1.2",
+    "vue-material-design-icons": "^3.3.1",
     "vue-router": "3.0.1",
-    "vue2-transitions": "0.3.0"
+    "vue2-transitions": "0.3.0",
+    "vuetify": "^1.5.16"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",

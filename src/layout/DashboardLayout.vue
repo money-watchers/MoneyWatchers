@@ -6,20 +6,33 @@
       title="Argon"
     >
       <template slot="links">
-        <sidebar-item
+        <!-- <sidebar-item
           :link="{
             name: 'Início',
             icon: 'ni ni-tv-2 text-primary',
             path: '/'
           }"
-        />
+        /> -->
 
-        <sidebar-item :link="{name: 'Icons', icon: 'ni ni-planet text-blue', path: '/icons'}"/>
-        <sidebar-item :link="{name: 'Maps', icon: 'ni ni-pin-3 text-orange', path: '/maps'}"/>
-        <sidebar-item :link="{name: 'User Profile', icon: 'ni ni-single-02 text-yellow', path: '/profile'}"/>
-        <sidebar-item :link="{name: 'Tables', icon: 'ni ni-bullet-list-67 text-red', path: '/tables'}"/>
-        <sidebar-item :link="{name: 'Login', icon: 'ni ni-key-25 text-info', path: '/login'}"/>
-        <sidebar-item :link="{name: 'Register', icon: 'ni ni-circle-08 text-pink', path: '/register'}"/>
+        <sidebar-item :link="{name: 'Visão Geral', icon: 'fas fa-home', path: '/visaogeral'}"/>
+        <sidebar-item :link="{name: 'Denúncias', icon: 'fas fa-exclamation-triangle', path: '/denuncia'}"/>
+        <sidebar-item :link="{name: 'Sobre', icon: 'ni ni-single-02', path: '/sobre'}"/>
+        <v-expansion-panel>
+          <v-expansion-panel-content>
+            <template v-slot:header>
+              <div><i class="fas fa-home"></i> Visão Geral </div>
+            </template>
+            <div>
+              <sidebar-item :link="{name: 'Todas as Obras', path: '/visaogeral'}"/>
+            </div>
+            <div>
+              <sidebar-item :link="{name: 'Todas as Empresas', path: '/visaogeral'}"/>
+            </div>
+            <div>
+              <sidebar-item :link="{name: 'Estatísticas', path: '/visaogeral'}"/>
+            </div>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
 
       </template>
     </side-bar>
