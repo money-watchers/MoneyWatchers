@@ -45,7 +45,7 @@
     props: {
       logo: {
         type: String,
-        default: 'img/brand/green.png',
+        default: 'img/brand/LOGO.png',
         description: 'Sidebar app logo'
       },
       autoClose: {
@@ -74,3 +74,20 @@
     }
   };
 </script>
+
+<style>
+.navbar-collapse .collapse-brand img {
+    height: 100px !important;
+}
+
+.navbar-vertical .navbar-brand-img, .navbar-vertical .navbar-brand > img {
+    max-width: 100%;
+    max-height: 6rem !important;
+}
+
+@media (min-width: 768px)
+.navbar-vertical.navbar-expand-md .navbar-brand-img {
+    max-height: 8rem !important;
+}
+
+</style>
